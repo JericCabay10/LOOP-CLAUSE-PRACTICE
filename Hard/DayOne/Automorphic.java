@@ -1,6 +1,9 @@
 package Hard.DayOne;
 
+import java.util.*;
+
 public class Automorphic {
+	static Scanner input = new Scanner(System.in);
     public static void AutomorphicNumbers() {
 		while(true) {
 			System.out.println("Enter a number: ");

@@ -1,6 +1,9 @@
 package Hard.DayOne;
 
+import java.util.*;
+
 public class Harshad {
+	static Scanner input = new Scanner(System.in);
     	public static void HarshadNumbers() {
 		while(true) {
 			System.out.print("Enter a number: ");
