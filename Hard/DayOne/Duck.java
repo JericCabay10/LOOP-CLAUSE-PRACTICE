@@ -36,6 +36,27 @@ public class Duck {
             }
 		}
 	}
+
+    public static void PrintAllDuckNumbers() {
+        int num = 5000;
+
+        for(int a = 1; a <= num; a++) {
+            int temp = a;
+            boolean hasZero = false;
+
+            while(temp != 0) {
+                int digit = temp % 10;
+                if(digit == 0) {
+                    hasZero = true;
+                    break;
+                }
+                temp /= 10;
+            }
+            if(hasZero) {
+                System.out.print(a + " ");
+            }
+        }
+    }
  
     public static void main(String[] args) {
         while(true) {
@@ -47,6 +68,10 @@ public class Duck {
                 break;
             }else if(choice == 1) {
                 DuckNumber();
+            }else if(choice == 2) {
+                PrintAllDuckNumbers();
+            }else {
+                System.out.println("Invalid choice. Please try again!");
             }
         }
     }
